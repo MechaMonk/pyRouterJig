@@ -2,8 +2,8 @@
 title: Installation
 ---
 
-Installation
-============
+Prerequisites
+=============
 
 At this stage of the project, pyRouterJig is likely not easily installed for someone
 completely unfamiliar with getting [Python](http://www.python.org)
@@ -26,5 +26,18 @@ I install all of these packages using [Anaconda](https://www.continuum.io/),
 which is also available for Windows, Mac, and Linux.  I highly recommend Anaconda,
 as the packages above may have other dependencies that Anaconda also takes
 care of installing.
+
+Installation
+============
+
+After unzipping (or untarring) the download file, locate the file
+<b>pyRouterJig</b>.  Assuming that you satisfy the Prequisites above and have
+those files in your path, on Mac and Linux you should be able to type in a terminal
+
+./pyRouterJig
+
+and the application should start.  On Windows, I don\'t know how to run python
+scripts, and this documentation will be updated once I receive that feedback.
+
 
 
