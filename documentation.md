@@ -6,7 +6,7 @@ title: pyRouterJig Documentation
 Using pyRouterJig
 ==================
 
-Note that pyRouterJig is in it\'s early development stage.  Many bugs likely
+Note that pyRouterJig is in its early development stage.  Many bugs likely
 still exist.  I know how frustrating it can be to try to get software to
 work.  If you contact me, I\'ll try to help, but please keep in mind that I also have a day job.
 
@@ -93,7 +93,7 @@ algorithms:
   3. <b>Centered:</b> This input is only available for straight bits (bit
     angle = 0).  If this box is checked, a finger is always centered on
     the board.  Otherwise, a full finger is started on the left edge, which
-    will result in a centerd finger only if the finger width divides into the
+    will result in a centered finger only if the finger width divides into the
     board width an odd number of times.
     Figure 5 shows an example of a non-centered pattern.
 
@@ -151,7 +151,7 @@ Printing
 
 For now, pyRouterJig does not have the capability to print the figure
 directly.  Instead, you must save the figure (described above) to a
-supported image format, and then print the image using another applicaiton.
+supported image format, and then print the image using another application.
 On the Mac, I prefer to save as a PDF file and use <b>Preview.app</b> to
 print.  For the Incra template, it\'s important that these operations maintain
 the true dimensions of the template on the printed page.  I\'m still working
@@ -179,14 +179,14 @@ errors.
 Incra Template
 ==============
 
-As mentioned abvoe, the Incra template may be cut out and used in a Incra LS
+As mentioned above, the Incra template may be cut out and used in a Incra LS
 Positioner fence.  Referring to any of the figures above, the template needs
-some explaination:
+some explanation:
 
 * I don\'t have a color printer.  So I decided to put the Board-A router passes on the
   upper half of the template and the Board-A passes on the lower half.
 * The router passes are labeled with their ordering and the Board letter (A or B), unless
-  consecutve cuts are too close together.  An example is shown in Figure 6,
+  consecutive cuts are too close together.  An example is shown in Figure 6,
   where the passes 3A, 9A, 2B, 3B, 11B, and 12B are not labeled. You should be able to figure out
   the ordering from a neighboring pass that is labeled.
 * For cuts that are wider than the <b>Bit Width</b>, the passes are made
@@ -212,7 +212,7 @@ The options file
 [options.py](https://github.com/lowrie/pyRouterJig/blob/master/options.py)
 specifies advanced options and is located in the source directory.  The file
 describes the various options, in detail.
-pyRouterJig is still under very active developemnt.  The options described in
+pyRouterJig is still under very active development.  The options described in
 [options.py](https://github.com/lowrie/pyRouterJig/blob/master/options.py) and
 in a future release may change, be deleted, or be made available in a more
 user-friendly manner.  Setting these options requires a basic knowledge of

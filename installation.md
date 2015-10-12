@@ -8,7 +8,7 @@ Prerequisites
 
 At this stage of the project, pyRouterJig is likely not easily installed for someone
 completely unfamiliar with getting [Python](http://www.python.org)
-applications running on their partiuclarly platform.  All I have access
+applications running on their particularly platform.  All I have access
 to is a Mac running OSX 10.9.2, so I won\'t be much help debugging other
 installations.
 
@@ -16,7 +16,7 @@ pyRouterJig depends upon the following [Python](http://www.python.org)
 packages, which must be installed in order to run pyRouterJig:
 
 * [Python](http://www.python.org).  Python is installed by default on
-  the Mac, but I use a slighly different version, as I will discuss below.
+  the Mac, but I use a slightly different version, as I will discuss below.
 * [Matplotlib](http://www.matplotlib.org}).  This package is used for
   drawing the joints and Incra template.  My long-term plan is to remove the
   dependency on this package.
@@ -32,7 +32,7 @@ Installation
 ============
 
 After unzipping (or untarring) the download file, locate the file
-<b>pyRouterJig</b>.  Assuming that you satisfy the Prequisites above and have
+<b>pyRouterJig</b>.  Assuming that you satisfy the Perquisites above and have
 those files in your path, on Mac and Linux you should be able to type in a terminal
 
 ./pyRouterJig
