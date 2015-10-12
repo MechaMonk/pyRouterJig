@@ -8,7 +8,7 @@ Using pyRouterJig
 When you start pyRouterJig, you should see something like the image below (the
 window may need to be resized in order to look exactly like this image):
 
-![Opening screenshot with tooltip on Bit Width]({{ site.baseuri }}/opening_screen_shot.png "Opening screenshot with tooltip on Bit Width")
+![Opening screenshot with tooltip on Bit Width]({{ site.baseurl }}/opening_screen_shot.png "Opening screenshot with tooltip on Bit Width")
 
 The default joint is a box joint, with the fingers equally spaced, over a
 width of 7 1/2\".  The upper portion of the window draws the current joint,
