@@ -252,3 +252,4 @@ know Python and can send me proposed patches (or pull requests on Github).
   * Consider relaxing the requirement that board and bit dimensions be exact multiples
     of intervals.
   * Double-joint support.
+  * Easier installation, for those who don\'t know anything about Python.
