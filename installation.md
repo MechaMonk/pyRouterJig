@@ -1,5 +1,6 @@
 ---
-title: Installation
+layout: default
+title: pyRouterJig Installation
 ---
 
 Prerequisites
