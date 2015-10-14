@@ -8,9 +8,14 @@ still exist.  I know how frustrating it can be to try to get broken software
 to work.  If you contact me, I\'ll try to help, but please keep in mind that I
 also have a day job.
 
-This page is split into the following sections:
+<a name="page-index"></a>
+
+This page is split into the following sections ("Return to index" link at the
+bottom of each section returns to this location):
 
 * [Overview of Features](#overview-of-features)
+* [Finger Spacing Options](#finger-spacing-options)
+* [Drop-Down Menus](#drop-down-menus)
 * [Printing](#printing)
 * [Intervals Explained](#intervals-explained)
 * [Incra Template Details](#incra-template-details)
@@ -90,6 +95,13 @@ has been changed to 7 degrees.
 </figcaption>
 </figure>
 
+[Return to index](#page-index)
+
+<a name="finger-spacing-options"></a>
+
+Finger Spacing Options
+======================
+
 Throughout the documentation of {{ site.codename }}, we refer to a \"finger\" not only
 as the traditional finger of a box joint, but also generically to refer to a
 pin or tail of a dovetail joint.  There are currently two finger-spacing
@@ -164,18 +176,40 @@ The sliders can be moved by using either dragging the mouse, or my clicking on t
 slider and using the left and right arrow keys for small changes and Page Up
 and Page Down for large changes.
 
+[Return to index](#page-index)
+
+<a name="drop-down-menus"></a>
+
+Drop-Down Menus
+===============
+
+Currently, there is only one drop-down menu, located in the upper-left hand
+corner of the window and named `pyRouterJig`.  This menu contains the
+following selections and its corresponding keyboard shortcut:
+
+* <b>About (Ctrl-A)</b> Pops up a window showing the version and license.
+* <b>Save (Ctrl-S)</b> Allows you to save the joint diagram to a file.
+* <b>Quit (Ctrl-Q)</b> Quits {{ site.codename}}.  If you\'ve made any changes
+to the joint and haven\'t saved it, then you\'ll be warned.
+
+On the Mac, for the keyboard shortcuts use the `Command` key rather than `Ctrl`.
+
+[Return to index](#page-index)
+
 <a name="printing"></a>
 
 Printing
 ========
 
 For now, {{ site.codename }} does not have the capability to print the joint
-directly.  Instead, you must save the joint (described above) to a
+directly.  Instead, you must save the joint (described in the previous section) to a
 supported image format, and then print the image using another application.
-On the Mac, I prefer to save as a PDF file and use <b>Preview.app</b> to
+On the Mac, I prefer to save as a PDF file and use `Preview.app` to
 print.  For the Incra template, it\'s important that these operations maintain
 the true dimensions of the template on the printed page.  I\'m still working
 on methods to make this operation more reliable and to work on all computing platforms.
+
+[Return to index](#page-index)
 
 <a name="intervals-explained"></a>
 
@@ -197,6 +231,8 @@ intervals, we ensure that it\'s possible to position the fence at the exact
 location desired.  More generally, using intervals (or \"integer arithmetic\")
 means that {{ site.codename }} does not need to be worried about floating-point
 errors.
+
+[Return to index](#page-index)
 
 <a name="incra-template-details"></a>
 
@@ -228,6 +264,8 @@ some explanation:
   outside the accuracy of an Incra fence.  Fortunately for me, a friend\'s laser printer
   is very accurate.  After printing, make sure you check the dimensions of the template.
 
+[Return to index](#page-index)
+
 <a name="options-file"></a>
 
 Options File
@@ -245,6 +283,8 @@ Python.  Also, if you change
 [options.py](https://github.com/lowrie/pyRouterJig/blob/master/options.py)
 while {{ site.codename }} is running, the options will not take effect until you quit
 and restart {{ site.codename }}.
+
+[Return to index](#page-index)
 
 <a name="needed-improvements"></a>
 
@@ -280,3 +320,5 @@ know Python and can send me proposed patches (or pull requests on Github).
   * Double-joint support.
   * Easier installation, for those who don\'t know anything about Python.
   * Move to Python version 3+.
+
+[Return to index](#page-index)
