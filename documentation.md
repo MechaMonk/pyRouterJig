@@ -183,14 +183,17 @@ and Page Down for large changes.
 Drop-Down Menus
 ===============
 
-Currently, there is only one drop-down menu, located in the upper-left hand
-corner of the window and named `pyRouterJig`.  This menu contains the
-following selections and its corresponding keyboard shortcut:
+Drop-down menus are located at the top of the window.  There are three menus
+available:
 
-* <b>About (Ctrl-A)</b> Pops up a window showing the version and license.
+1. <b>File</b>
 * <b>Save (Ctrl-S)</b> Allows you to save the joint diagram to a file.
+* <b>Screenshot (Ctrl-W)</b> Saves a screenshot of the window.
 * <b>Quit (Ctrl-Q)</b> Quits {{ site.codename}}.  If you\'ve made any changes
 to the joint and haven\'t saved it, then you\'ll be warned.
+1. <b>Units</b>
+1. <b>Help</b> Very limited, for now:
+* <b>About (Ctrl-A)</b> Pops up a window showing the version and license.
 
 On the Mac, for the keyboard shortcuts use the `Command` key rather than `Ctrl`.
 
