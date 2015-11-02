@@ -27,8 +27,8 @@ bottom of each section returns to this location):
 Overview of Features
 ====================
 
-When you start {{ site.codename }}, you should see something like the image below (the
-window may need to be resized in order to look exactly like this image):
+When you start {{ site.codename }}, you should see something like the image
+below (this image is from a Mac; on other platforms, the image may differ):
 
 <figure>
 <a name="figure1"></a>
@@ -46,9 +46,9 @@ the boards is the corresponding Incra template.  This template may be cut out
 and used in an Incra LS Positioner.  Below the template is a concise title
 that summarizes the properties of the joint.  A vertical dashed line denotes
 the center of the boards.   The graphics containing the
-boards, template, and title may be saved to a file by hitting the <b>Save</b>
-button on the lower left of the window, finding the <b>Save</b> option in the
-pull-down menu, or pressing the key combination `Ctrl-S` (`Command-S` on Mac).
+boards, template, and title may be printed by pressing the <b>Print</b>
+button on the lower left of the window, finding the <b>Print</b> option in the
+<b>File</b> pull-down menu, or pressing the key combination `Ctrl-P` (`Command-P` on Mac).
 
 The lower part of the window allows you to interactively change the parameters
 for the joint.  The joint is re-drawn after each change.  At the lower left,
@@ -186,13 +186,19 @@ Drop-Down Menus
 Drop-down menus are located at the top of the window.  There are three menus
 available:
 
-1. <b>File</b>
-* <b>Save (Ctrl-S)</b> Allows you to save the joint diagram to a file.
-* <b>Screenshot (Ctrl-W)</b> Saves a screenshot of the window.
+1. <b>File:</b>
+* <b>Save (Ctrl-P)</b> Allows you to print the joint diagram (or save it to a file).
+* <b>Screenshot (Ctrl-S)</b> Saves a screenshot of the window.
 * <b>Quit (Ctrl-Q)</b> Quits {{ site.codename}}.  If you\'ve made any changes
 to the joint and haven\'t saved it, then you\'ll be warned.
-1. <b>Units</b>
-1. <b>Help</b> Very limited, for now:
+1. <b>Units:</b>
+English and metric units are supported.  Note that
+changing units may cause accuracy issues, as a result of rounding.  For example, changing from english
+to metric units, and then changing back to english units, changes the
+dimension `7 1/2"` to `7 9/16"`.
+1. <b>Wood:</b>  This menu allows you to select the wood appearance of the boards.  Changes are
+cosmetic only.
+1. <b>Help:</b> Very limited, for now:
 * <b>About (Ctrl-A)</b> Pops up a window showing the version and license.
 
 On the Mac, for the keyboard shortcuts use the `Command` key rather than `Ctrl`.
@@ -204,13 +210,9 @@ On the Mac, for the keyboard shortcuts use the `Command` key rather than `Ctrl`.
 Printing
 ========
 
-For now, {{ site.codename }} does not have the capability to print the joint
-directly.  Instead, you must save the joint (described in the previous section) to a
-supported image format, and then print the image using another application.
-On the Mac, I prefer to save as a PDF file and use `Preview.app` to
-print.  For the Incra template, it\'s important that these operations maintain
-the true dimensions of the template on the printed page.  I\'m still working
-on methods to make this operation more reliable and to work on all computing platforms.
+{{ site.codename }} prints through a preview screen.  Press the printer icon
+at the upper-right of the preview screen to either select the printer, or to
+print to a file.
 
 [Return to index](#page-index)
 
@@ -302,26 +304,16 @@ have already started on some of these.
 * <b>Windows and Linux Support.</b>  If you can help test and improve {{ site.codename }} on
 any platform, particularly Windows and Linux, please contact me.  Ideally, you
 know Python and can send me proposed patches (or pull requests on Github).
-* <b>Known Bugs.</b>
-  1. The redraw after changing a parameter does not resize the graphics in the
-  same manner as resizing the window with your mouse.  In particular, if you
-  can\'t see all of the graphics, try resizing your window.
 * <b>Features.</b> I\'m working on the following features, but would appreciate help:
   * Cleaning up these web pages.
   * Define the option for \"fold-over templates\" that are appropriate for
     laying out hand-cut joints.  This would be an alternative option to the Incra template.
   * More friendly error messages and handling.
-  * Get rid of the dependence on matplotlib and use PyQt drawing
-    directly.
-  * Allow one to print the joint directly, without having to save to a file
-    first and open the file in another application that is able to print it.
-    This is apparently a limitation of matplotlib.
   * More spacing options, such as an interactive GUI to allow manual
     adjustment of individual finger positions and widths.
   * Consider relaxing the requirement that board and bit dimensions be exact multiples
     of intervals.
   * Double-joint support.
   * Easier installation, for those who don\'t know anything about Python.
-  * Move to Python version 3+.
 
 [Return to index](#page-index)

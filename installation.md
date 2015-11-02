@@ -17,9 +17,6 @@ packages, which must be installed in order to run {{ site.codename }}:
 
 * [Python](http://www.python.org).  Python is installed by default on
   the Mac, but I use a slightly different version, as I will discuss below.
-* [Matplotlib](http://www.matplotlib.org}).  This package is used for
-  drawing the joints and Incra template.  My long-term plan is to remove the
-  dependency on this package.
 * [PyQt4](http://pyqt.sourceforge.net).  This package is used as the
   graphical user interface (GUI).
 
@@ -46,7 +43,7 @@ After unzipping (or untarring) the download file, locate the file named
 `pyRouterJig`.  Assuming that you satisfy the Perquisites above and have
 those files in your path, on Mac and Linux you should be able to type in a terminal
 
-`./pyRouterJig`
+`./pyRouterJig.py`
 
 and the application should start.  On Windows, I don\'t know how to run python
 scripts, and this documentation will be updated once I receive that feedback.
