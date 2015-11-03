@@ -7,8 +7,8 @@ title: pyRouterJig Installation
 Installation for Windows and Mac
 ================================
 
-Pre-compiled binaries (thanks to [PyInstaller](http://www.pyinstaller.org/))
-are available from the homepage for Windows and Mac.  For Windows, simply
+Pre-compiled binaries for Windows and Mac (thanks to [PyInstaller](http://www.pyinstaller.org/))
+are available on the [{{ site.codename }}](http://lowrie.github.io/pyRouterJig/).  For Windows, simply
 download `pyRouterJig.exe` file, double-click on it, and the program should run.
 
 For Mac, download the `pyRouterJig.app.zip` file.  Unzip this file by
