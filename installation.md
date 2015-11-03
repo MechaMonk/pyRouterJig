@@ -19,7 +19,7 @@ Installation from source
 ========================
 
 This approach will likely be a challenge
-unless you are familiar wit [Python](http://www.python.org), the language that
+unless you are familiar working with [Python](http://www.python.org), the language that
 {{ site.codename }} uses.
 
 {{ site.codename }} depends upon the following [Python](http://www.python.org)
@@ -38,15 +38,11 @@ the Mac, you must enter the command
 
 `conda install pyqt`
 
-in a `Terminal.app` window.  If you don\'t have `conda` in your path, you must
-do
-
-`/anaconda/bin/conda install pyqt`
-
-assuming that `/anaconda/bin` is where Anaconda was installed.  Another
-required package is `future`, which is used so that {{ site.codename }} works
-for both python 2.7 and 3.5 (these are the versions that I have tested;
-versions inbetween should work also).  For Anaconda, simply do
+in a `Terminal.app` window and `conda` is in your path.  Another required
+package is [Python-Future](http://python-future.org/overview.html), which is
+used so that {{ site.codename }} works for both python 2.7 and 3.5 (these are
+the versions that I have tested; intermediate versions should work also).  For
+Anaconda, use the command
 
 `conda install future`
 
@@ -57,5 +53,9 @@ Assuming that you satisfy the perquisites above and have
 those files in your path, on any platform you should be able to type in a terminal
 
 `./pyRouterJig.py`
+
+or on Windows
+
+`.\pyRouterJig.py`
 
 and the application should start.
