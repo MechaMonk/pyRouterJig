@@ -46,7 +46,7 @@ changes that would do such analysis).
 * There is no implication of any
 particular joint\'s strength.  The joint may fail, even if you glue it up
 properly. pyRouterJig is not responsible for joint failures.
-* There is no guarantee that pyRouterJig is accurate.K or even generates a
+* There is no guarantee that pyRouterJig is accurate, or even generates a
 feasible joint.  Errors in pyRouterJig might result a joint pattern that does
 not fit and destroy your otherwise perfect woodworking project.
 * In summary, if you believe, or you believe that your survivors might believe,

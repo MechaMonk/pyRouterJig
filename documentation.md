@@ -21,6 +21,7 @@ bottom of each section returns to this location):
 * [Incra Template Details](#incra-template-details)
 * [Options File](#options-file)
 * [Needed Improvements](#needed-improvements)
+* [Acknowledgments](#acknowledgments)
 
 <a name="overview-of-features"></a>
 
@@ -315,5 +316,20 @@ know Python and can send me proposed patches (or pull requests on Github).
     of intervals.
   * Double-joint support.
   * Easier installation, for those who don\'t know anything about Python.
+
+[Return to index](#page-index)
+
+<a name="acknowledgments"></a>
+
+Acknowledgments
+===============
+
+{{ site.codename }} depends upon and is extremely grateful for the following
+open-source software efforts:
+
+* [Python](http://www.python.org)
+* [PyQt](http://sourceforge.net/projects/pyqt/)
+* [PyInstaller](http://www.pyinstaller.org/)
+* [Anaconda](https://www.continuum.io/)
 
 [Return to index](#page-index)

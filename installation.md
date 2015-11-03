@@ -7,21 +7,13 @@ title: pyRouterJig Installation
 Installation for Windows and Mac
 ================================
 
-Pre-compiled binaries (thanks to [pyinstaller](http://www.pyinstaller.org/)
+Pre-compiled binaries (thanks to [PyInstaller](http://www.pyinstaller.org/))
 are available from the homepage for Windows and Mac.  For Windows, simply
 download `pyRouterJig.exe` file, double-click on it, and the program should run.
 
 For Mac, download the `pyRouterJig.app.zip` file.  Unzip this file by
 double-clicking on it, which should create the folder `pyRouterJig.app`.
 Double-clicking on this folder should start the application.
-`pyRouterJig`.  Assuming that you satisfy the Perquisites above and have
-those files in your path, on Mac and Linux you should be able to type in a terminal
-
-`./pyRouterJig.py`
-
-and the application should start.  On Windows, I don\'t know how to run python
-scripts, and this documentation will be updated once I receive that feedback.
-
 
 Installation from source
 ========================
@@ -39,7 +31,7 @@ packages, which must be installed in order to run {{ site.codename }}:
   graphical user interface (GUI).
 
 I install all of these packages using [Anaconda](https://www.continuum.io/),
-which is also available for Windows, Mac, and Linux.  I highly recommend Anaconda,
+Which is also available for Windows, Mac, and Linux.  I highly recommend Anaconda,
 as the packages above may have other dependencies that Anaconda also takes
 care of installing.  Note that Anaconda may not install PyQt4 by default.  On
 the Mac, you must enter the command
@@ -61,3 +53,9 @@ versions inbetween should work also).  For Anaconda, simply do
 Another advantage of Anaconda is that you may install more than one version of Python.
 
 
+Assuming that you satisfy the perquisites above and have
+those files in your path, on any platform you should be able to type in a terminal
+
+`./pyRouterJig.py`
+
+and the application should start.
