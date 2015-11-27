@@ -205,14 +205,16 @@ to the <b>Editor</b>.
 [Figure 7](#figure7) shows an example of entering the <b>Editor</b>, after setting up the
 joint as in [Fig. 6](#figure6).  The active finger is highlighted in red and is the finger
 which is to be edited, using either the buttons under the <b>Editor</b> tab,
-or using keyboard shortcuts.  The green vertical lines indicate the extents
+or using keyboard shortcuts.  The active finger is always on Board-B. Because
+any changes on Board-B are reflected on Board-A, there is no need to allow
+editing of Board-A fingers.  The green vertical lines indicate the extents
 that the active finger can be moved or widened, limited by the bit width.
 
 <figure>
 <a name="figure7"></a>
 <img src="{{ site.baseurl }}/editor_screen_shot.png" alt="Editor example.">
 <figcaption>
-<b>Figure 7.</b>  Editor mode, following initial spacing set in Fig. 6.
+<b>Figure 7.</b>  Editor mode, following Variable spacing set up as in Fig. 6.
 </figcaption>
 </figure>
 
@@ -306,7 +308,9 @@ As mentioned above, the Incra template may be cut out and used in a Incra LS
 Positioner fence.  Referring to any of the figures above, the template needs
 some explanation:
 
-* I don\'t have a color printer.  So I decided to put the Board-A router passes on the
+* The Incra templates that come with the LS Positioner distinguish between
+  Board-A and Board-B cuts using color.  To avoid requiring a color printer, 
+  the Board-A router passes are placed on the
   upper half of the template and the Board-A passes on the lower half.
 * The router passes are labeled with their ordering and the Board letter (A or B), unless
   consecutive cuts are too close together.  An example is shown in [Figure 6](#figure6),
