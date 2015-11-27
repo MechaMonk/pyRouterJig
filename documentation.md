@@ -15,6 +15,7 @@ bottom of each section returns to this location):
 
 * [Overview of Features](#overview-of-features)
 * [Finger Spacing Options](#finger-spacing-options)
+* [Editor](#editor)
 * [Drop-Down Menus](#drop-down-menus)
 * [Printing](#printing)
 * [Intervals Explained](#intervals-explained)
@@ -42,14 +43,21 @@ mouse pointer, which is located over the <b>Bit Width</b> text box so that its t
 
 The default joint is a box joint, with the fingers equally spaced, over a
 width of 7 1/2\".  The upper portion of the window draws the current joint,
-with the labels \"Board-A\" and \"Board-B\" on the boards of the joint.  Below
-the boards is the corresponding Incra template.  This template may be cut out
-and used in an Incra LS Positioner.  Below the template is a concise title
-that summarizes the properties of the joint.  A vertical dashed line denotes
-the center of the boards.   The graphics containing the
-boards, template, and title may be printed by pressing the <b>Print</b>
-button on the lower left of the window, finding the <b>Print</b> option in the
-<b>File</b> pull-down menu, or pressing the key combination `Ctrl-P` (`Command-P` on Mac).
+with the labels \"A\" and \"B\" on the boards of the joint.  Each finger is
+labeled with its width, in intervals.  By default
+
+* 1 interval = 1/32\" (English units)
+* 1 interval = 1 mm (metric units)
+
+See [Intervals Explained](#intervals-explained) section for more discussion on intervals.
+
+Below the boards is the corresponding Incra template.  This template may be
+cut out and used in an Incra LS Positioner.  Below the template is a concise
+title that summarizes the properties of the joint.  A vertical dashed line
+denotes the center of the boards.  The graphics containing the boards,
+template, and title may be printed by selecting <b>Print</b> in the
+<b>File</b> pull-down menu, or by pressing the key combination `Ctrl-P`
+(`Command-P` on Mac).
 
 The lower part of the window allows you to interactively change the parameters
 for the joint.  The joint is re-drawn after each change.  At the lower left,
@@ -105,8 +113,11 @@ Finger Spacing Options
 
 Throughout the documentation of {{ site.codename }}, we refer to a \"finger\" not only
 as the traditional finger of a box joint, but also generically to refer to a
-pin or tail of a dovetail joint.  There are currently two finger-spacing
-algorithms:
+pin or tail of a dovetail joint.  There are currently two automatic finger-spacing
+algorithms, along with an editor to allow specification of arbitrary joints.
+The automatic spacing options are <b>Equal</b> and <b>Variable</b>, located at
+tabs in the lower-right portion of the window.  Each option has its own
+controls, described below:
 
 * <b>Equal:</b> In this case, the fingers are equally spaced.  
   Figures [1](#figure1) and [2](#figure2) are examples.
@@ -176,6 +187,52 @@ value of 5.
 The sliders can be moved by using either dragging the mouse, or my clicking on the
 slider and using the left and right arrow keys for small changes and Page Up
 and Page Down for large changes.
+
+[Return to index](#page-index)
+
+<a name="editor"></a>
+
+Editor
+======
+
+The <b>Editor</b> tab allows you to edit each individual finger of the joint.
+The starting joint for editing is whatever was last specified under either the
+<b>Equal</b> or <b>Variable</b> spacing options.  Under the <b>Editor</b>, the board
+and bit dimensions cannot be changed; make sure these are set to their final
+values under under either the <b>Equal</b> or <b>Variable</b> before switching
+to the <b>Editor</b>.
+
+[Figure 7](#figure7) shows an example of entering the <b>Editor</b>, after setting up the
+joint as in [Fig. 6](#figure6).  The active finger is highlighted in red and is the finger
+which is to be edited, using either the buttons under the <b>Editor</b> tab,
+or using keyboard shortcuts.  The green vertical lines indicate the extents
+that the active finger can be moved or widened, limited by the bit width.
+
+<figure>
+<a name="figure7"></a>
+<img src="{{ site.baseurl }}/editor_screen_shot.png" alt="Editor example.">
+<figcaption>
+<b>Figure 7.</b>  Editor mode, following initial spacing set in Fig. 6.
+</figcaption>
+</figure>
+
+The buttons and shortcuts are as follows: 
+
+* <b>Move:</b> (keyboard: left and right arrow keys) The arrows move the active finger 1 interval to the left or right, if possible.
+* <b>Widen:</b> (keyboard: Hold `Shift` key, along with left and right arrow keys) Widens the active finger on its left or right side by 1 interval, if possible.
+* <b>Trim:</b> (keyboard: Hold `Control` key, along with left or right arrows) Trim the active finger on its left or right side by 1 interval, if possible.
+* <b>Select:</b>  (keyboard: Hold `Alt` key, along with left or right arrows) Selects the next
+finger to the right or left to be the active finger.
+* <b>Add:</b>  (keyboard: `+`) Adds a finger, if possible.  There needs to be
+space enough to add a finger, given the board width and bit constraints.  The
+finger is added in the first possible location found, searching from the
+left side of the board.
+* <b>Delete:</b>  (keyboard: `-`) Deletes the active finger.
+* <b>Undo:</b>  (keyboard: `u`) Undo the last editing operation.  This key may
+be pressed multiple times.
+
+Note that if you make changes in the <b>Editor</b>, and then go back to either
+<b>Equal</b> or <b>Variable</b> options, the changes will be lost.
 
 [Return to index](#page-index)
 
@@ -310,12 +367,10 @@ know Python and can send me proposed patches (or pull requests on Github).
   * Define the option for \"fold-over templates\" that are appropriate for
     laying out hand-cut joints.  This would be an alternative option to the Incra template.
   * More friendly error messages and handling.
-  * More spacing options, such as an interactive GUI to allow manual
-    adjustment of individual finger positions and widths.
+  * More spacing options.
   * Consider relaxing the requirement that board and bit dimensions be exact multiples
     of intervals.
   * Double-joint support.
-  * Easier installation, for those who don\'t know anything about Python.
 
 [Return to index](#page-index)
 
