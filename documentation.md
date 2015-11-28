@@ -360,7 +360,9 @@ Needed Improvements
 
 I am looking for help to make the improvements outlined in this section.  I
 will certainly give credit to those who help make these or any other
-improvements!  If you\'re thinking of contributing, let me know, because I may
+improvements.  In fact, thanks to 
+
+If you\'re thinking of contributing, let me know, because I may
 have already started on some of these.
 
 * <b>Windows and Linux Support.</b>  If you can help test and improve {{ site.codename }} on
@@ -374,7 +376,9 @@ know Python and can send me proposed patches (or pull requests on Github).
   * More spacing options.
   * Consider relaxing the requirement that board and bit dimensions be exact multiples
     of intervals.
-  * Double-joint support.
+  * Double-joint and double-double joint support.
+  * Save joint to a file support.
+  * Export to Sketchup, or a file that it can import.
 
 [Return to index](#page-index)
 
@@ -382,6 +386,9 @@ know Python and can send me proposed patches (or pull requests on Github).
 
 Acknowledgments
 ===============
+
+Thanks to "PhilBa" at [routerforums.com](http://www.routerforums.com) for his
+suggestions for improvement and testing help!
 
 {{ site.codename }} depends upon and is extremely grateful for the following
 open-source software efforts:
