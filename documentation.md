@@ -249,7 +249,11 @@ available:
 1. <b>File:</b>
 * <b>Print (Ctrl-P)</b> Allows you to print the joint diagram (including print
 to a file).
-* <b>Screenshot (Ctrl-S)</b> Saves a screenshot of the window.
+* <b>Screenshot (Ctrl-S)</b> Saves a screenshot of the window as a `PNG` file.  Screenshots
+are placed in your home directory, numbered sequentially as
+`screenshot_0.png`, `screenshot_1.png`, `screenshot_2.png`, ..., for a given
+program session.  If you restart {{ site.codename }}, old screenshots files will be
+overwritten with new screenshots, starting again with file `screenshot_0.png`.
 * <b>Quit (Ctrl-Q)</b> Quits {{ site.codename}}.  If you\'ve made any changes
 to the joint and haven\'t printed it, then you\'ll be warned.
 1. <b>Units:</b>
