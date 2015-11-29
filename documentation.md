@@ -247,10 +247,11 @@ Drop-down menus are located at the top of the window.  There are three menus
 available:
 
 1. <b>File:</b>
-* <b>Save (Ctrl-P)</b> Allows you to print the joint diagram (or save it to a file).
+* <b>Print (Ctrl-P)</b> Allows you to print the joint diagram (including print
+to a file).
 * <b>Screenshot (Ctrl-S)</b> Saves a screenshot of the window.
 * <b>Quit (Ctrl-Q)</b> Quits {{ site.codename}}.  If you\'ve made any changes
-to the joint and haven\'t saved it, then you\'ll be warned.
+to the joint and haven\'t printed it, then you\'ll be warned.
 1. <b>Units:</b>
 English and metric units are supported.  Note that
 changing units may cause accuracy issues, as a result of rounding.  For example, changing from english
