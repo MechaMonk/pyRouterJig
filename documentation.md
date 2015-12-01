@@ -18,7 +18,7 @@ bottom of each section returns to this location):
 * [Editor](#editor)
 * [Drop-Down Menus](#drop-down-menus)
 * [Printing](#printing)
-* [Intervals Explained](#intervals-explained)
+* [Increments Explained](#increments-explained)
 * [Incra Template Details](#incra-template-details)
 * [Options File](#options-file)
 * [Needed Improvements](#needed-improvements)
@@ -44,12 +44,12 @@ mouse pointer, which is located over the <b>Bit Width</b> text box so that its t
 The default joint is a box joint, with the fingers equally spaced, over a
 width of 7 1/2\".  The upper portion of the window draws the current joint,
 with the labels \"A\" and \"B\" on the boards of the joint.  Each finger is
-labeled with its width, in intervals.  By default
+labeled with its width, in increments.  By default
 
-* 1 interval = 1/32\" (English units)
-* 1 interval = 1 mm (metric units)
+* 1 increment = 1/32\" (English units)
+* 1 increment = 1 mm (metric units)
 
-See [Intervals Explained](#intervals-explained) section for more discussion on intervals.
+See [Increments Explained](#increments-explained) section for more discussion on increments.
 
 Below the boards is the corresponding Incra template.  This template may be
 cut out and used in an Incra LS Positioner.  Below the template is a concise
@@ -203,12 +203,14 @@ values under under either the <b>Equal</b> or <b>Variable</b> before switching
 to the <b>Editor</b>.
 
 [Figure 7](#figure7) shows an example of entering the <b>Editor</b>, after setting up the
-joint as in [Fig. 6](#figure6).  The active finger is highlighted in red and is the finger
+joint as in [Fig. 6](#figure6).  An active finger is highlighted in red and is the finger
 which is to be edited, using either the buttons under the <b>Editor</b> tab,
-or using keyboard shortcuts.  The active finger is always on Board-B. Because
+or using keyboard shortcuts.  Active fingers are always on Board-B. Because
 any changes on Board-B are reflected on Board-A, there is no need to allow
-editing of Board-A fingers.  The green vertical lines indicate the extents
-that the active finger can be moved or widened, limited by the bit width.
+editing of Board-A fingers.  The blue outline on a finger indicates the finger
+cursor.  The cursor is used to select active fingers.  More than one finger
+may be active.  The green vertical lines indicate the extents
+that the active fingers can be moved or widened, limited by the bit width.
 
 <figure>
 <a name="figure7"></a>
@@ -218,20 +220,36 @@ that the active finger can be moved or widened, limited by the bit width.
 </figcaption>
 </figure>
 
+The Editor functionality is grouped into two main categories, with buttons (or
+corresponding keyboard shortcuts) controlling the actions taken.  
 The buttons and shortcuts are as follows: 
 
-* <b>Move:</b> (keyboard: left and right arrow keys) The arrows move the active finger 1 interval to the left or right, if possible.
-* <b>Widen:</b> (keyboard: Hold `Shift` key, along with left and right arrow keys) Widens the active finger on its left or right side by 1 interval, if possible.
-* <b>Trim:</b> (keyboard: Hold `Control` key, along with left or right arrows) Trim the active finger on its left or right side by 1 interval, if possible.
-* <b>Select:</b>  (keyboard: Hold `Alt` key, along with left or right arrows) Selects the next
-finger to the right or left to be the active finger.
-* <b>Add:</b>  (keyboard: `+`) Adds a finger, if possible.  There needs to be
-space enough to add a finger, given the board width and bit constraints.  The
-finger is added in the first possible location found, searching from the
-left side of the board.
-* <b>Delete:</b>  (keyboard: `-`) Deletes the active finger.
-* <b>Undo:</b>  (keyboard: `u`) Undo the last editing operation.  This key may
-be pressed multiple times.
+* <b>Active Finger Select</b>:  This category allows you to select which
+  fingers are active.  Active fingers are those for which the <b>Active Finger
+  Operators</b> will be applied, described below.
+   The buttons for this category are as follows:
+  * The arrow buttons (keyboard:  left or right arrows) control the position
+  of the finger cursor, shown with a blue outline.  
+  * <b>Toggle:</b> (keybord: `Return`) Toggle the finger at the cursor as active and deactive.
+    When active, the finger is highlighted in red.
+  * <b>All:</b> (keybord: `a`) All fingers are set as active.
+  * <b>None:</b> (keybord: `n`) All fingers are set as inactive.
+* <b>Active Finger Operators</b>: This category applies editing operators to
+  the active fingers, and its buttons are as follows:
+  * <b>Move:</b> (keyboard: Hold `Alt` key, along with left and right arrow keys) The arrows move the active fingers 1 increment to the left or right, if possible.
+  * <b>Widen:</b> (keyboard: Hold `Shift` key, along with left and right arrow keys) Widens the active fingers on their left or right side by 1 increment, if possible.
+  * <b>Trim:</b> (keyboard: Hold `Control` key, along with left or right arrows) Trims the active fingers on their left or right side by 1 increment, if possible.
+  * Moves the finger cursor to the right or left
+  finger to the right or left to be the active finger.
+  * <b>Add:</b>  (keyboard: `+`) Adds one finger, if possible.  There needs to be
+    space enough to add a finger, given the board width and bit constraints.  The
+    finger is added in the first possible location found, searching from the
+    left side of the board.
+  * <b>Delete:</b>  (keyboard: `-`) Deletes the active finger.
+
+Fingally, the <b>Undo</b> button  (keyboard: `u`) reverses the last editing
+operation.  Undo may be applied repeatedly, until the joint is back to the
+starting point of invoking the <b>Editor</b>.
 
 Note that if you make changes in the <b>Editor</b>, and then go back to either
 <b>Equal</b> or <b>Variable</b> options, the changes will be lost.
@@ -281,24 +299,24 @@ print to a file.
 
 [Return to index](#page-index)
 
-<a name="intervals-explained"></a>
+<a name="increments-explained"></a>
 
-Intervals Explained
+Increments Explained
 ===================
 
 {{ site.codename }} does all of its computations in terms of what we refer
-to as \"intervals.\"  By default,
+to as \"increments.\"  By default,
 
-* 1 interval = 1/32\" (English units)
-* 1 interval = 1 mm (metric units)
+* 1 increment = 1/32\" (English units)
+* 1 increment = 1 mm (metric units)
 
-An interval is the resolution of {{ site.codename }}.  All dimensions used by
+An increment is the resolution of {{ site.codename }}.  All dimensions used by
 {{ site.codename }}, such as the router-bit width, are rounded to the nearest number
-of intervals.  The reason for the default choices above is that these are the
+of increments.  The reason for the default choices above is that these are the
 resolutions of the respective [Incra LS Positioner
 fence](http://www.incra.com/router_table_fences-ls_positiners.html).  By using
-intervals, we ensure that it\'s possible to position the fence at the exact
-location desired.  More generally, using intervals (or \"integer arithmetic\")
+increments, we ensure that it\'s possible to position the fence at the exact
+location desired.  More generally, using increments (or \"integer arithmetic\")
 means that {{ site.codename }} does not need to be worried about floating-point
 errors.
 
@@ -380,7 +398,7 @@ know Python and can send me proposed patches (or pull requests on Github).
   * More friendly error messages and handling.
   * More spacing options.
   * Consider relaxing the requirement that board and bit dimensions be exact multiples
-    of intervals.
+    of increments.
   * Double-joint and double-double joint support.
   * Save joint to a file support.
   * Export to Sketchup, or a file that it can import.
