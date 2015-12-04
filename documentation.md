@@ -217,6 +217,8 @@ that the active fingers can be moved or widened, limited by the bit width.
 <img src="{{ site.baseurl }}/editor_screen_shot.png" alt="Editor example.">
 <figcaption>
 <b>Figure 7.</b>  Editor mode, following Variable spacing set up as in Fig. 6.
+The first three fingers on board-B are active, with the finger cursor on the
+center finger.
 </figcaption>
 </figure>
 
@@ -306,7 +308,7 @@ print to a file.
 <a name="increments-explained"></a>
 
 Increments Explained
-===================
+====================
 
 {{ site.codename }} does all of its computations in terms of what we refer
 to as \"increments.\"  By default,
