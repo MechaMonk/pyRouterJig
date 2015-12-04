@@ -265,15 +265,19 @@ Drop-down menus are located at the top of the window.  There are three menus
 available:
 
 1. <b>File:</b>
+* <b>Open (Ctrl-O)</b> Opens a previously saved screenshot file (see <b>Save</b>).
+{{ site.codename }} embeds the joint data in the `PNG` image files that it
+saves.  Opening the `PNG` file will allow you to start work again where you
+left off.  Note that in the <b>Editor</b> mode, the Undo history is not saved.
+* <b>Save (Ctrl-S)</b> Saves a screenshot of the window as a `PNG` file.  By
+default, screenshots are placed in your home directory, numbered sequentially as
+`screenshot_0.png`, `screenshot_1.png`, `screenshot_2.png`, ..., for a given
+program session.  If you restart {{ site.codename }}, the numbering restarts,
+starting again with file `screenshot_0.png`.
 * <b>Print (Ctrl-P)</b> Allows you to print the joint diagram (including print
 to a file).
-* <b>Screenshot (Ctrl-S)</b> Saves a screenshot of the window as a `PNG` file.  Screenshots
-are placed in your home directory, numbered sequentially as
-`screenshot_0.png`, `screenshot_1.png`, `screenshot_2.png`, ..., for a given
-program session.  If you restart {{ site.codename }}, old screenshots files will be
-overwritten with new screenshots, starting again with file `screenshot_0.png`.
 * <b>Quit (Ctrl-Q)</b> Quits {{ site.codename}}.  If you\'ve made any changes
-to the joint and haven\'t printed it, then you\'ll be warned.
+to the joint and haven\'t saved it, then you\'ll be warned.
 1. <b>Units:</b>
 English and metric units are supported.  Note that
 changing units may cause accuracy issues, as a result of rounding.  For example, changing from english
@@ -400,7 +404,6 @@ know Python and can send me proposed patches (or pull requests on Github).
   * Consider relaxing the requirement that board and bit dimensions be exact multiples
     of increments.
   * Double-joint and double-double joint support.
-  * Save joint to a file support.
   * Export to Sketchup, or a file that it can import.
 
 [Return to index](#page-index)
