@@ -35,7 +35,7 @@ below (this image is from a Mac; on other platforms, the image may differ):
 <a name="figure1"></a>
 <img src="{{ site.baseurl }}/opening_screen_shot.png" alt="Opening screenshot">
 <figcaption>
-<b>Figure 1.</b>  Opening screenshot. The screenshot doesn\'t show the
+<b>Figure 1.</b>  Opening screenshot. The screenshot doesn't show the
 mouse pointer, which is located over the <b>Bit Width</b> input box so that its tooltip appears.
 </figcaption>
 </figure>
@@ -308,8 +308,8 @@ Double and Double-Double Joints
 ===============================
 
 A Double joint is created simply by selecting a wood pattern other than `NONE`
-under <b>Double Board</b>.  It's <b>Thickness</b> may also be changed from
-it's default of 1/8", similar to parameters such as <b>Board Width</b>.
+under <b>Double Board</b>.  Its <b>Thickness</b> may also be changed from
+its default of 1/8", similar to parameters such as <b>Board Width</b>.
 [Figure 9](#figure9) is an example of a Double joint.
 
 <figure>
@@ -325,7 +325,7 @@ by selecting a wood pattern other than `NONE` under <b>Double-Double Board</b>.
 [Figure 10](#figure10) is an example of a Double-Double joint.  In this case,
 there are two templates which must be aligned in two slots in the Incra LS
 Positioner at the dashed line labeled `ALIGN`.  The alignment line is not
-always in the same position on the template; its position is placed as to minimize
+always in the same position on the template; its position is placed to minimize
 interference with cut lines on the templates.
 
 <figure>
@@ -351,7 +351,13 @@ available:
 <b>Save</b> and <b>Screenshot</b>).
 {{ site.codename }} embeds the joint data in the `PNG` image files that it
 saves.  Opening the `PNG` file will allow you to start work again where you
-left off.  Note that in the <b>Editor</b> mode, the Undo history is not saved.
+left off.  Note that in the <b>Editor</b> mode, the Undo history is
+not saved.   Any of the images in this documentation page may be opened with
+{{ site.codename }}.  For the wood images described in [Wood Pattern
+Selection](#wood-pattern), only the name of the wood image is saved.  So
+if the image uses wood images, such as the `hard-maple` and `black-walnut` in
+[Figure 9](figure9),  if you don't have these images available
+in your own `wood_images` folder, then a simple pattern is substituted.
 * <b>Save (Ctrl-S)</b> Saves the joint figure as a `PNG` file.  By
 default, the image files are placed in your home directory, numbered sequentially as
 `pyrouterjig_0.png`, `pyrouterjig_1.png`, `pyrouterjig_2.png`, and so on.  The
@@ -441,7 +447,7 @@ some explanation:
 * Of course, it\'s critical that your printer not distort the template when
   printing the template on paper.  I have a cheap inkjet printer that
   consistently distorts the template about 1/32" over 4".  This is well
-  outside the accuracy of an Incra fence.  Fortunately for me, a friend\'s laser printer
+  outside the accuracy of an Incra fence.  Fortunately, a friend\'s laser printer
   is very accurate.  After printing, make sure you check the dimensions of the template.
 
 [Return to index](#page-index)
@@ -453,7 +459,7 @@ Configuration File
 
 The configuration file `.pyrouterjig` is created in the user's home directory
 when {{ site.codename }} is first executed.  This file contains advanced
-options, described within the file in detail.  {{ site.codename }} is still
+options, each described within the file itself.  {{ site.codename }} is still
 under very active development.  Consequently, in a future release, the options
 may change, be deleted, or be made available in a more user-friendly manner.
 Setting these options requires a basic knowledge of Python.  If you change the
@@ -469,7 +475,7 @@ Needed Improvements
 
 I am looking for help to make the improvements outlined in this section.  I
 will certainly give credit to those who help make these or any other
-improvements.  In fact, thanks to 
+improvements.
 
 If you\'re thinking of contributing, let me know, because I may
 have already started on some of these.
@@ -499,7 +505,9 @@ Acknowledgments
 ===============
 
 Thanks to "PhilBa" at [routerforums.com](http://www.routerforums.com) for his
-suggestions for improvement and testing help!
+numerous suggestions for improvement and testing help! I'm always amazed at
+the bugs he finds.  Among many great ideas, in particular he should be
+credited with the idea of storing the joint metadata in the `PNG` file.
 
 {{ site.codename }} depends upon and is extremely grateful for the following
 open-source software efforts:
