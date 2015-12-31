@@ -13,6 +13,7 @@ This page is split into the following sections ("Return to index" link at the
 bottom of each section returns to this location):
 
 * [Overview of Features](#overview-of-features)
+* [Wood Pattern Selection](#wood-pattern)
 * [Finger Spacing Options](#finger-spacing-options)
 * [Editor](#editor)
 * [Double and Double-Double Joints](#double)
