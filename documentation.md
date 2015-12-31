@@ -239,8 +239,8 @@ Editor
 ======
 
 The <b>Editor</b> tab allows you to edit each individual cut of the joint.
-The editor operates on the `A`-cuts of the Top Board; all of the other cuts
-(B, C, D, etc.) follow from the `A`-cuts.  The starting joint for editing is
+The editor operates on the A-cuts of the Top Board; all of the other cuts
+(B, C, D, etc.) follow from the A-cuts.  The starting joint for editing is
 whatever was last specified under either the <b>Equal</b> or <b>Variable</b>
 spacing options.  Under the <b>Editor</b>, the board and bit dimensions, the
 Double and Double-Double parameters, cannot be changed; make sure these are
@@ -251,7 +251,7 @@ set to their final values under under either the <b>Equal</b> or
 setting up the joint as in [Fig. 7](#figure7).  An active cut is highlighted
 in red and is the cut which is to be edited, using either the buttons under
 the <b>Editor</b> tab, or using keyboard shortcuts.  Again, active cuts are
-always on the `A`-cuts of the Top Board.  The blue outline on a cut indicates
+always on the A-cuts of the Top Board.  The blue outline on a cut indicates
 the cut cursor.  The cursor is used to select active cuts.  More than one cut
 may be active.  The green vertical lines indicate the extents that the active
 cuts can be moved or widened, limited by the bit width.
@@ -356,7 +356,7 @@ not saved.   Any of the images in this documentation page may be opened with
 {{ site.codename }}.  For the wood images described in [Wood Pattern
 Selection](#wood-pattern), only the name of the wood image is saved.  So
 if the image uses wood images, such as the `hard-maple` and `black-walnut` in
-[Figure 9](figure9),  if you don't have these images available
+[Figure 9](#figure9),  if you don't have these images available
 in your own `wood_images` folder, then a simple pattern is substituted.
 * <b>Save (Ctrl-S)</b> Saves the joint figure as a `PNG` file.  By
 default, the image files are placed in your home directory, numbered sequentially as
@@ -364,7 +364,7 @@ default, the image files are placed in your home directory, numbered sequentiall
 image size is the same as your current window size, but no smaller than
 `min_image_size`, which is set in the [configuration
 file](#configuration-file).  By default, `min_image_size = 2048`.
-[Figure 11](figure11) shows the saved image corresponding to [Figure 10](figure10).
+[Figure 11](#figure11) shows the saved image corresponding to [Figure 10](#figure10).
 * <b>Screenshot (Ctrl-W)</b> Similar to <b>Save</b>, but includes the entire
 {{ site.codename }} application window.  The image size is the same as your
 current window size.  Figures 1 through 10 were created with
@@ -385,10 +385,11 @@ dimension `7 1/2"` to `7 9/16"`.
 * <b>Fullscreen (Ctrl-F)</b> Toggles full-screen mode.
 * <b>Caul Template</b> Toggles the caul template.  The caul template is an
 additional Incra template that can be used to create clamping cauls for the
-joint with the LS Positioner.  It's assumed that the same router bit width is used
-to create the cauls.  The template follows the same pattern as that for the
+joint with the LS Positioner.  It's assumed that a straight router bit of the
+same width is used to create the cauls.  The template follows the same pattern as that for the
 Top and Bottom Boards, but with narrower fingers.  By default, 1
-increment is removed from the side of each finger.
+increment is removed from the side of each finger. [Figure 12](#figure12)
+shows an example of the caul template.
 1. <b>Help:</b>
 * <b>About (Ctrl-A)</b> Pops up a window showing the version and license.
 * <b>Documentation</b> Opens your default browser and goes to the
@@ -403,6 +404,17 @@ On the Mac, for the keyboard shortcuts use the `Command` key rather than `Ctrl`.
 <figcaption>
 <b>Figure 11.</b> The same as Figure 10, but using <b>Save</b> rather than
 <b>Screenshot</b> to create the image file.
+</figcaption>
+</figure>
+
+<figure>
+<a name="figure12"></a>
+<img src="{{ site.baseurl }}/caul_screen_shot.png" alt="Example of Caul Template.">
+<figcaption>
+<b>Figure 12.</b> The same as Figure 1, but after toggling <b>Caul
+Template</b> under the <b>View</b> menu.  The A-cuts on the Cauls template
+will create a clamping caul for the Top Board, while the B-cuts create a
+clamping caul for teh Bottom Board.
 </figcaption>
 </figure>
 
@@ -492,17 +504,16 @@ any platform, particularly Windows and Linux, please contact me.  Ideally, you
 know Python and can send me proposed patches (or pull requests on Github).
 * <b>Features.</b> I\'m working on the following features, but would appreciate help:
   * In Editor, allow for certain changes in parameters, such as board width
-  and decreasing the bit width.
+  and bit width.  The reason changes are disabled now is that parameter changes
+  may create errors that are difficult to recover from.
   * Define the option for \"fold-over templates\" that are appropriate for
     laying out hand-cut joints.  This would be an alternative option to the Incra template.
   * More friendly error messages and handling.
   * More spacing options.
-  * Cleaning up these web pages.
+  * Cleaning up these web pages. Create a webpage with more example joints.
   * Consider relaxing the requirement that board and bit dimensions be exact multiples
     of increments.
   * Export to Sketchup, or a file that it can import.
-  * Create a place in the repository for example joints.  Include joints from
-  the Incra manual.
 
 [Return to index](#page-index)
 
