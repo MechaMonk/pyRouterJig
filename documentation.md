@@ -374,7 +374,6 @@ are meant to be used to quickly generate image files (such as for this documenta
 to a file). {{ site.codename }} prints through a preview screen.  Press the printer icon
 at the upper-right of the preview screen to either select the printer, or to
 print to a file.
-* <b>Fullscreen (Ctrl-F)</b> Toggles full-screen mode.
 * <b>Quit (Ctrl-Q)</b> Quits {{ site.codename}}.  If you\'ve made any changes
 to the joint and haven\'t saved it, then you\'ll be warned.
 1. <b>Units:</b>
@@ -382,6 +381,14 @@ English and metric units are supported.  Note that
 changing units may cause accuracy issues, as a result of rounding.  For example, changing from English
 to metric units, and then changing back to English units, changes the
 dimension `7 1/2"` to `7 9/16"`.
+1. <b>View:</b>
+* <b>Fullscreen (Ctrl-F)</b> Toggles full-screen mode.
+* <b>Caul Template</b> Toggles the caul template.  The caul template is an
+additional Incra template that can be used to create clamping cauls for the
+joint with the LS Positioner.  It's assumed that the same router bit width is used
+to create the cauls.  The template follows the same pattern as that for the
+Top and Bottom Boards, but with narrower fingers.  By default, 1
+increment is removed from the side of each finger.
 1. <b>Help:</b>
 * <b>About (Ctrl-A)</b> Pops up a window showing the version and license.
 * <b>Documentation</b> Opens your default browser and goes to the
@@ -507,7 +514,8 @@ Acknowledgments
 Thanks to "PhilBa" at [routerforums.com](http://www.routerforums.com) for his
 numerous suggestions for improvement and testing help! I'm always amazed at
 the bugs he finds.  Among many great ideas, in particular he should be
-credited with the idea of storing the joint metadata in the `PNG` file.
+credited with the ideas of storing the joint metadata in the `PNG` file and
+the clamping caul template
 
 {{ site.codename }} depends upon and is extremely grateful for the following
 open-source software efforts:
