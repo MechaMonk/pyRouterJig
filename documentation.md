@@ -69,9 +69,6 @@ finger-spacing algorithm.  On the top row, we have
 * <b>Bit Angle [degrees]:</b> The angle of the router bit.  Zero indicates
   a straight bit (box joint).  Fractional values must be input as a
   floating-point number, such as \"7.5\".
-* <b>Bit Angle [degrees]:</b> The angle of the router bit.  Zero indicates
-  a straight bit (box joint).  Fractional values must be input as a
-  floating-point number, such as \"7.5\".
 
 These parameters are changed by entering text for the dimension in their
 respective text boxes, shown in the image above.  Moving the cursor outside
