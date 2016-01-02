@@ -176,14 +176,18 @@ controls, described below:
     board width an odd number of times.
     [Figure 6](#figure6) shows an example of a non-centered pattern.
 
+  The sliders can be moved by using either dragging the mouse, or my clicking on the
+  slider and using the left and right arrow keys for small changes and Page Up
+  and Page Down for large changes.
+
 * <b>Variable:</b> In this case a large finger is centered on the board,
   and the fingers decrease in size proportional to the distance to the center.
   There is one input that affects this algorithm:
 
-  1. <b>Fingers:</b> This slider allows you to specify the number of
+  1. <b>Fingers:</b> Specifies the approximate number of
     fingers.  At its minimum value, the width of the center finger is maximized. At
     its maximum value, the width of the center finger is minimized, and the result is
-    the same as equally-spaced with, zero \"Spacing\", zero \"Width\", and
+    the same as equally-spaced with zero \"Spacing\", zero \"Width\", and
     the \"Centered\" option checked.
 
 [Figure 7](#figure7) shows an example of a Variable-spaced box joint.
@@ -220,14 +224,10 @@ Width</b> has been changed to 7" and the <b>Centered</b> option unclicked.
 <img src="{{ site.baseurl }}/variable_screen_shot.png" alt="Variable spacing example.">
 <figcaption>
 <b>Figure 7.</b>  Variable spacing option.  Compared to Fig. 1, the
-<b>Variable</b> tab has been clicked and the <b>Fingers</b> slider moved to a
+<b>Variable</b> tab has been clicked and the <b>Fingers</b> input has a
 value of 5.
 </figcaption>
 </figure>
-
-The sliders can be moved by using either dragging the mouse, or my clicking on the
-slider and using the left and right arrow keys for small changes and Page Up
-and Page Down for large changes.
 
 [Return to index](#page-index)
 
