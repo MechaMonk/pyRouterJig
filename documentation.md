@@ -129,12 +129,13 @@ Portable Network Graphics - PNG) to draw the board.  At startup,
 and assumes any file in this folder is an image file.  It then makes these
 images available to draw any of the boards.
 
-As an example, I have the file `hard-maple.png` in my `wood_images` folder,
-which I obtained from [the wood database
-website](http://www.wood-database.com/); specifically,
-[see this webpage](http://www.wood-database.com/lumber-identification/hardwoods/hard-maple/).
+A starting `wood_images` can be downloaded [from this link]({{ site.baseurl }}/wood_images.zip).
+Unzip this file in your home directory and you should be
+ready to go.  As an example, the file `hard-maple.png` is in this `wood_images` folder.
 Using this image for the Top and Bottom Boards in [Figure 1](#figure1)
 displays [Figure 3](#figure3).
+Other good wood image files can be obtained from [the wood database
+website](http://www.wood-database.com/).
 
 <figure>
 <a name="figure3"></a>
