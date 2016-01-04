@@ -23,8 +23,8 @@ License along with pyRouterJig; see the file LICENSE. If not, see
 Disclaimer
 ==========
 
-Because of the dangers of using woodworking tools, please read the following:
------------------------------------------------------------------------------
+Please read the following:
+--------------------------
 
 * Woodworking can be dangerous, and in particular, using a router or other tools
 to cut joints is dangerous.  You can loose your eyesight, fingers, and suffer

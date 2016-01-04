@@ -96,7 +96,7 @@ dovetail joint shown in [Figure 2](#figure2) below:
 
 <figure>
 <a name="figure2"></a>
-<img src="{{ site.baseurl }}/dovetail_screen_shot.png" alt="Dovetail
+<img src="{{ site.baseurl }}/images/dovetail_screen_shot.png" alt="Dovetail
 example.">
 <figcaption>
 <b>Figure 2.</b>  Dovetail example.  Compared to Fig. 1, the <b>Bit Angle</b>
@@ -139,7 +139,7 @@ website](http://www.wood-database.com/).
 
 <figure>
 <a name="figure3"></a>
-<img src="{{ site.baseurl }}/woods_screen_shot.png" alt="Wood image example.">
+<img src="{{ site.baseurl }}/images/woods_screen_shot.png" alt="Wood image example.">
 <figcaption>
 <b>Figure 3.</b>  Same as Figure 1, but using a "hard-maple" image file for
 the Top and Bottom Boards.
@@ -195,7 +195,7 @@ controls, described below:
 
 <figure>
 <a name="figure4"></a>
-<img src="{{ site.baseurl }}/bspacing_screen_shot.png" alt="Spacing example">
+<img src="{{ site.baseurl }}/images/bspacing_screen_shot.png" alt="Spacing example">
 <figcaption>
 <b>Figure 4.</b>  Effect of Spacing option.  Compared to Fig. 1, the <b>Spacing</b>
 slider been moved to a value of 1 17/32".
@@ -204,7 +204,7 @@ slider been moved to a value of 1 17/32".
 
 <figure>
 <a name="figure5"></a>
-<img src="{{ site.baseurl }}/width_screen_shot.png" alt="Width example.">
+<img src="{{ site.baseurl }}/images/width_screen_shot.png" alt="Width example.">
 <figcaption>
 <b>Figure 5.</b>  Effect of Width option.  Compared to Fig. 1, the <b>Width</b>
 slider been moved to a value of 27/32".
@@ -213,7 +213,7 @@ slider been moved to a value of 27/32".
 
 <figure>
 <a name="figure6"></a>
-<img src="{{ site.baseurl }}/centered_screen_shot.png" alt="Centered example.">
+<img src="{{ site.baseurl }}/images/centered_screen_shot.png" alt="Centered example.">
 <figcaption>
 <b>Figure 6.</b>  Effect of Centered option.  Compared to Fig. 1, the <b>Board
 Width</b> has been changed to 7" and the <b>Centered</b> option unclicked.
@@ -222,7 +222,7 @@ Width</b> has been changed to 7" and the <b>Centered</b> option unclicked.
 
 <figure>
 <a name="figure7"></a>
-<img src="{{ site.baseurl }}/variable_screen_shot.png" alt="Variable spacing example.">
+<img src="{{ site.baseurl }}/images/variable_screen_shot.png" alt="Variable spacing example.">
 <figcaption>
 <b>Figure 7.</b>  Variable spacing option.  Compared to Fig. 1, the
 <b>Variable</b> tab has been clicked and the <b>Fingers</b> input has a
@@ -257,7 +257,7 @@ cuts can be moved or widened, limited by the bit width.
 
 <figure>
 <a name="figure8"></a>
-<img src="{{ site.baseurl }}/editor_screen_shot.png" alt="Editor example.">
+<img src="{{ site.baseurl }}/images/editor_screen_shot.png" alt="Editor example.">
 <figcaption>
 <b>Figure 8.</b>  Editor mode, following Variable spacing set up as in Fig. 7.
 The first three cuts on the Top Board are active, with the cut cursor on the
@@ -313,7 +313,7 @@ its default of 1/8", similar to parameters such as <b>Board Width</b>.
 
 <figure>
 <a name="figure9"></a>
-<img src="{{ site.baseurl }}/double_screen_shot.png" alt="Double joint example.">
+<img src="{{ site.baseurl }}images/double_screen_shot.png" alt="Double joint example.">
 <figcaption>
 <b>Figure 9.</b>  Example of a Double joint, following the Equal spacing set up as in Fig. 1.
 </figcaption>
@@ -329,7 +329,7 @@ interference with cut lines on the templates.
 
 <figure>
 <a name="figure10"></a>
-<img src="{{ site.baseurl }}/dd_screen_shot.png" alt="Double-double joint example.">
+<img src="{{ site.baseurl }}/images/dd_screen_shot.png" alt="Double-double joint example.">
 <figcaption>
 <b>Figure 10.</b>  Example of a Double-Double joint, following the the set up as in Fig. 9.
 </figcaption>
@@ -399,7 +399,7 @@ On the Mac, for the keyboard shortcuts use the `Command` key rather than `Ctrl`.
 
 <figure>
 <a name="figure11"></a>
-<img src="{{ site.baseurl }}/dd_fig.png" alt="Save option figure.">
+<img src="{{ site.baseurl }}/images/dd_fig.png" alt="Save option figure.">
 <figcaption>
 <b>Figure 11.</b> The same as Figure 10, but using <b>Save</b> rather than
 <b>Screenshot</b> to create the image file.
@@ -408,7 +408,7 @@ On the Mac, for the keyboard shortcuts use the `Command` key rather than `Ctrl`.
 
 <figure>
 <a name="figure12"></a>
-<img src="{{ site.baseurl }}/caul_screen_shot.png" alt="Example of Caul Template.">
+<img src="{{ site.baseurl }}/images/caul_screen_shot.png" alt="Example of Caul Template.">
 <figcaption>
 <b>Figure 12.</b> The same as Figure 1, but after toggling <b>Caul
 Template</b> under the <b>View</b> menu.  The A-cuts on the Cauls template
