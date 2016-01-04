@@ -26,6 +26,9 @@ Disclaimer
 Please read the following:
 --------------------------
 
+* This software and its output is not an INCRA product.  The authors have no
+connection with INCRA (or Taylor Design Group, Inc.), aside from being users
+themselves of their products.
 * Woodworking can be dangerous, and in particular, using a router or other tools
 to cut joints is dangerous.  You can loose your eyesight, fingers, and suffer
 other serious, even fatal, injuries.

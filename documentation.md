@@ -19,7 +19,7 @@ bottom of each section returns to this location):
 * [Double and Double-Double Joints](#double)
 * [Drop-Down Menus](#drop-down-menus)
 * [Increments Explained](#increments-explained)
-* [Incra Template Details](#incra-template-details)
+* [Template Details](#incra-template-details)
 * [Configuration File](#configuration-file)
 * [Needed Improvements](#needed-improvements)
 * [Acknowledgments](#acknowledgments)
@@ -50,8 +50,8 @@ Each finger is labeled with its width, in increments.  By default
 
 See [Increments Explained](#increments-explained) section for more discussion on increments.
 
-Below the boards is the corresponding Incra template.  This template may be
-cut out and used in an Incra LS Positioner.  Below the template is a concise
+Below the boards is the corresponding template that may be
+cut out and used in an INCRA LS Positioner.  Below the template is a concise
 title that summarizes the properties of the joint.  A vertical dashed line
 denotes the center of the boards.  The graphics containing the boards,
 template, and title may be printed by selecting <b>Print</b> in the
@@ -322,7 +322,7 @@ its default of 1/8", similar to parameters such as <b>Board Width</b>.
 Once a Double joint has been specified, you can make it a Double-Double joint
 by selecting a wood pattern other than `NONE` under <b>Double-Double Board</b>.
 [Figure 10](#figure10) is an example of a Double-Double joint.  In this case,
-there are two templates which must be aligned in two slots in the Incra LS
+there are two templates which must be aligned in two slots in the INCRA LS
 Positioner at the dashed line labeled `ALIGN`.  The alignment line is not
 always in the same position on the template; its position is placed to minimize
 interference with cut lines on the templates.
@@ -383,8 +383,8 @@ dimension `7 1/2"` to `7 9/16"`.
 1. <b>View:</b>
 * <b>Fullscreen (Ctrl-F)</b> Toggles full-screen mode.
 * <b>Caul Template</b> Toggles the caul template.  The caul template is an
-additional Incra template that can be used to create clamping cauls for the
-joint with the LS Positioner.  It's assumed that a straight router bit of the
+additional template that can be used to create clamping cauls for the
+joint with the INCRA LS Positioner.  It's assumed that a straight router bit of the
 same width is used to create the cauls.  The template follows the same pattern as that for the
 Top and Bottom Boards, but with narrower fingers.  By default, 1
 increment is removed from the side of each finger. [Figure 12](#figure12)
@@ -433,7 +433,7 @@ to as \"increments.\"  By default,
 An increment is the resolution of {{ site.codename }}.  All dimensions used by
 {{ site.codename }}, such as the router-bit width, are rounded to the nearest number
 of increments.  The reason for the default choices above is that these are the
-resolutions of the respective [Incra LS Positioner
+resolutions of the respective [INCRA LS Positioner
 fence](http://www.incra.com/router_table_fences-ls_positiners.html).  By using
 increments, we ensure that it\'s possible to position the fence at the exact
 location desired.  More generally, using increments (or \"integer arithmetic\")
@@ -444,10 +444,10 @@ errors.
 
 <a name="incra-template-details"></a>
 
-Incra Template Details
-======================
+Template Details
+================
 
-As mentioned above, the Incra template may be cut out and used in a Incra LS
+As mentioned above, the template may be cut out and used in a INCRA LS
 Positioner fence.  Referring to any of the figures above, the template needs
 some explanation:
 
@@ -465,7 +465,7 @@ some explanation:
 * Of course, it\'s critical that your printer not distort the template when
   printing the template on paper.  I have a cheap inkjet printer that
   consistently distorts the template about 1/32" over 4".  This is well
-  outside the accuracy of an Incra fence.  Fortunately, a friend\'s laser printer
+  outside the accuracy of an INCRA fence.  Fortunately, a friend\'s laser printer
   is very accurate.  After printing, make sure you check the dimensions of the template.
 
 [Return to index](#page-index)
@@ -506,7 +506,7 @@ know Python and can send me proposed patches (or pull requests on Github).
   and bit width.  The reason changes are disabled now is that parameter changes
   may create errors that are difficult to recover from.
   * Define the option for \"fold-over templates\" that are appropriate for
-    laying out hand-cut joints.  This would be an alternative option to the Incra template.
+    laying out hand-cut joints.
   * More friendly error messages and handling.
   * More spacing options.
   * Cleaning up these web pages. Create a webpage with more example joints.
