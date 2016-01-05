@@ -323,9 +323,7 @@ Once a Double joint has been specified, you can make it a Double-Double joint
 by selecting a wood pattern other than `NONE` under <b>Double-Double Board</b>.
 [Figure 10](#figure10) is an example of a Double-Double joint.  In this case,
 there are two templates which must be aligned in two slots in the INCRA LS
-Positioner at the dashed line labeled `ALIGN`.  The alignment line is not
-always in the same position on the template; its position is placed to minimize
-interference with cut lines on the templates.
+Positioner at the line labeled `ALIGN`.
 
 <figure>
 <a name="figure10"></a>
@@ -456,6 +454,15 @@ some explanation:
 * The gray regions are margins for the template, outside the board\'s width.
   It\'s possible for a pass to be placed in the gray region, if the outer
   fingers are narrower than half of the <b>Bit Width</b>.
+* A template may be aligned in one of two ways:
+  1. Using the centerline of the template and the procedure explained in the
+  INCRA manual.  For each template, either the centerline is shown as a dashed
+  line, or if the centerline coincides with a cut, that cut denoted on each
+  end of the template.
+  1. The `ALIGN` line is located 1/2 the bit width on the outside of the right
+  edge of the board.  Therefore if you align your bit flush with the fence and
+  then position the template at the `ALIGN` line, your template will be
+  properly positioned.
 * On any one router pass, a good rule of thumb is not to cut deeper than the
   <b>Bit Width</b>.  So for example, for a <b>Bit Width</b> of 1/2" and a
   <b>Bit Depth</b> of 3/4", it's best to run the board through twice, the
