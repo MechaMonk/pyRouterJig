@@ -34,7 +34,7 @@ below (this image is from a Mac; on other platforms, the image may differ):
 
 <figure>
 <a name="figure1"></a>
-<img src="{{ site.baseurl }}/opening_screen_shot.png" alt="Opening screenshot">
+<img src="{{ site.baseurl }}/images/opening_screen_shot.png" alt="Opening screenshot">
 <figcaption>
 <b>Figure 1.</b>  Opening screenshot. The screenshot doesn't show the
 mouse pointer, which is located over the <b>Bit Width</b> input box so that its tooltip appears.
@@ -313,7 +313,7 @@ its default of 1/8", similar to parameters such as <b>Board Width</b>.
 
 <figure>
 <a name="figure9"></a>
-<img src="{{ site.baseurl }}images/double_screen_shot.png" alt="Double joint example.">
+<img src="{{ site.baseurl }}/images/double_screen_shot.png" alt="Double joint example.">
 <figcaption>
 <b>Figure 9.</b>  Example of a Double joint, following the Equal spacing set up as in Fig. 1.
 </figcaption>
