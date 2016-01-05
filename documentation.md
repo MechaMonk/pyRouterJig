@@ -457,10 +457,13 @@ some explanation:
 * A template may be aligned in one of two ways:
   1. Using the centerline of the template and the procedure explained in the
   INCRA manual.  For each template, either the centerline is shown as a dashed
-  line, or if the centerline coincides with a cut, that cut denoted on each
-  end of the template.
+  line that spans the template height, or if the centerline coincides with a
+  cut, that cut denoted on each end of the template.  For example, in [Figure
+  11](#figure11), the bottom template indicates that the centerline coincides with
+  cut `3E`, whereas the top template draws the centerline between cuts `5C`
+  and `6C`.
   1. The `ALIGN` line is located 1/2 the bit width on the outside of the right
-  edge of the board.  Therefore if you align your bit flush with the fence and
+  edge of the board.  Therefore, if you align your bit flush with the fence and
   then position the template at the `ALIGN` line, your template will be
   properly positioned.
 * On any one router pass, a good rule of thumb is not to cut deeper than the
