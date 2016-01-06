@@ -52,8 +52,7 @@ See [Increments Explained](#increments-explained) section for more discussion on
 
 Below the boards is the corresponding template that may be
 cut out and used in an INCRA LS Positioner.  Below the template is a concise
-title that summarizes the properties of the joint.  A vertical dashed line
-denotes the center of the boards.  The graphics containing the boards,
+title that summarizes the properties of the joint.  The graphics containing the boards,
 template, and title may be printed by selecting <b>Print</b> in the
 <b>File</b> pull-down menu, or by pressing the key combination `Ctrl-P`
 (`Command-P` on Mac).
@@ -534,8 +533,8 @@ Acknowledgments
 Thanks to "PhilBa" at [routerforums.com](http://www.routerforums.com) for his
 numerous suggestions for improvement and testing help! I'm always amazed at
 the bugs he finds.  Among many great ideas, in particular he should be
-credited with the ideas of storing the joint metadata in the `PNG` file and
-the clamping caul template
+credited with the ideas of storing the joint metadata in the `PNG` file,
+the clamping caul template, and the easy alignment method.
 
 {{ site.codename }} depends upon and is extremely grateful for the following
 open-source software efforts:
